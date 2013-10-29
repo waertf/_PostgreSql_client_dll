@@ -2,16 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Devart.Data;
 using Devart.Data.PostgreSql;
 using System.Data;
 
 namespace PostgreSqlClient
 {
-    class SqlClient
+    public class SqlClient
     {
         PgSqlConnectionStringBuilder pgCSB = new PgSqlConnectionStringBuilder();
         PgSqlConnection pgSqlConnection;
-        public bool IsConnected { get; set; }
+        public bool IsConnected { get; private set; }
+
+        /// <summary>constructor of SqlClient</summary>
+        /// <remarks>all params are in string type</remarks>
+        /// <param name="Pooling">true/false</param>
+        /// <param name="MinPoolSize">The minimum number of connections allowed in the pool.</param>
+        /// <param name="MaxPoolSize">The maximum number of connections allowed in the pool.</param>
+        /// <param name="ConnectionLifetime">Gets or sets time span in seconds for connection to live.</param>
         public SqlClient(string ip, string port, string user_id, string password, string database, string Pooling, string MinPoolSize, string MaxPoolSize, string ConnectionLifetime)
         {
             pgCSB.Host = ip;
@@ -29,6 +37,9 @@ namespace PostgreSqlClient
             pgCSB.Unicode = true;
             pgSqlConnection = new PgSqlConnection(pgCSB.ConnectionString);
         }
+
+        /// <summary>connect to sql server</summary>
+        /// <remarks>if success then return true,otherwice return false</remarks>
         public bool connect()
         {
             try
@@ -50,6 +61,9 @@ namespace PostgreSqlClient
                 return false;
             }
         }
+
+        /// <summary>disconnect sql server</summary>
+        /// <remarks>if success then return true,otherwice return false</remarks>
         public bool disconnect()
         {
             try
@@ -71,7 +85,11 @@ namespace PostgreSqlClient
                 return false;
             }
         }
+
         //For UPDATE, INSERT, and DELETE statements
+        /// <summary>For UPDATE, INSERT, and DELETE statements</summary>
+        /// <remarks>if success then return true,otherwice return false</remarks>
+        /// <param name="cmd">sql command for UPDATE, INSERT, or DELETE </param>
         public bool modify(string cmd)
         {
             try
@@ -110,7 +128,11 @@ namespace PostgreSqlClient
             }
 
         }
+
         //For SELECT statements
+        /// <summary>For SELECT statements</summary>
+        /// <remarks>return DataTable type if success , otherwice return null</remarks>
+        /// <param name="Pooling">sql command for SELECT only</param>
         public DataTable get_DataTable(string cmd)
         {
             try
@@ -174,6 +196,5 @@ namespace PostgreSqlClient
                 return null;
             }
         }
-
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PostgreSqlClient")]
+[assembly: AssemblyTitle("ConsoleApplication1_test_dll")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PostgreSqlClient")]
+[assembly: AssemblyProduct("ConsoleApplication1_test_dll")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e4a2fca4-f4b3-42c4-8432-5f2997c5b56e")]
+[assembly: Guid("fe414099-8205-40c4-96ab-e61ca2fd97b4")]
 
 // Version information for an assembly consists of the following four values:
 //

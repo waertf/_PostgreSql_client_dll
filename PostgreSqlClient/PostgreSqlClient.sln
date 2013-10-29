@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSqlClient", "PostgreSqlClient\PostgreSqlClient.csproj", "{FE8EEA39-92EF-4998-8D16-98EE3E1ECC8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSqlClient", "PostgreSqlClient\PostgreSqlClient.csproj", "{54834C7C-249E-480A-8B13-EE0C3AF6B605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1_test_dll", "ConsoleApplication1_test_dll\ConsoleApplication1_test_dll.csproj", "{447FB888-A297-4EB2-BA74-DF52CAE75CFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FE8EEA39-92EF-4998-8D16-98EE3E1ECC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE8EEA39-92EF-4998-8D16-98EE3E1ECC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE8EEA39-92EF-4998-8D16-98EE3E1ECC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE8EEA39-92EF-4998-8D16-98EE3E1ECC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54834C7C-249E-480A-8B13-EE0C3AF6B605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54834C7C-249E-480A-8B13-EE0C3AF6B605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54834C7C-249E-480A-8B13-EE0C3AF6B605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54834C7C-249E-480A-8B13-EE0C3AF6B605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447FB888-A297-4EB2-BA74-DF52CAE75CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447FB888-A297-4EB2-BA74-DF52CAE75CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447FB888-A297-4EB2-BA74-DF52CAE75CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447FB888-A297-4EB2-BA74-DF52CAE75CFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
